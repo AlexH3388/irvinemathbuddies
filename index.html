@@ -153,7 +153,7 @@
   .contact-list li{display:flex;gap:.7rem;align-items:flex-start}
   .contact-list svg{width:20px;height:20px;flex:none;color:var(--leaf);margin-top:3px}
   .contact-list a,.foot-grid p a{color:var(--forest);font-weight:500}
-  .socials{display:flex;gap:.8rem;align-items:center;margin-top:1.3rem}
+  .socials{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin-top:1.3rem}
   .socials > a:first-child{width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--line-2);border-radius:50%;color:var(--forest)}
   .socials svg{width:22px;height:22px}
   .fine{margin-top:2.8rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--faint);text-align:center}
@@ -262,7 +262,7 @@
         <p class="hero-lede">Math can be fun when students learn together. We connect high school volunteers with elementary students who would benefit from extra practice, encouragement, and support.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeASkDNd-Vc-bpjBtbB3NM-MHZisZfrLPqNKtzZSgxjiUbnmQ/viewform" target="_blank" rel="noopener">Fill out interest form <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn-ghost" href="#volunteers">Become a mentor</a>
+          <a class="btn btn-ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSdhsGMmbdq2VcLvMuB6nxi9s3dSaIIHlgppr4fpw3kp-xJGXg/viewform" target="_blank" rel="noopener">Become a mentor</a>
         </div>
         <div class="welcome" aria-label="Welcome in English, Chinese and Farsi">
           <span lang="en">Welcome!</span>
@@ -414,7 +414,7 @@
         <article class="card reveal" id="volunteers">
           <div class="icon-tile t-sun"><svg aria-hidden="true"><use href="#i-star"/></svg></div>
           <h3>High school students</h3>
-          <p>Earn community service hours while making a real impact. Be someone's favorite math mentor!</p>
+          <p>Earn community service hours while making a real impact. Fill out the short volunteer form with your availability, and we'll reach out. Be someone's favorite math mentor!</p>
           <ul class="checks">
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Help younger students build math confidence</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Teach through games, puzzles, and creative activities</li>
@@ -422,7 +422,7 @@
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Build leadership, communication, and mentoring skills</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Earn valuable community service hours</li>
           </ul>
-          <a class="btn btn-primary" href="https://www.greetfoundation.org/become-a-volunteer" target="_blank" rel="noopener">Sign up to volunteer <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdhsGMmbdq2VcLvMuB6nxi9s3dSaIIHlgppr4fpw3kp-xJGXg/viewform" target="_blank" rel="noopener">Volunteer interest form <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           <p class="note">You don't have to be a math genius. You just need patience, enthusiasm, and a willingness to help others learn!</p>
         </article>
       </div>
@@ -489,7 +489,8 @@
         <p>Big Kids Helping Little Minds Grow! A free community math mentorship program for Alderwood Elementary students, run by <a href="https://www.greetfoundation.org">Greet Foundation</a>.</p>
         <div class="socials">
           <a href="https://www.instagram.com/greetfoundation/" aria-label="Greet Foundation on Instagram"><svg aria-hidden="true"><use href="#i-insta"/></svg></a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASkDNd-Vc-bpjBtbB3NM-MHZisZfrLPqNKtzZSgxjiUbnmQ/viewform" class="btn btn-primary" target="_blank" rel="noopener">Interest form</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASkDNd-Vc-bpjBtbB3NM-MHZisZfrLPqNKtzZSgxjiUbnmQ/viewform" class="btn btn-primary" target="_blank" rel="noopener">Family interest form</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhsGMmbdq2VcLvMuB6nxi9s3dSaIIHlgppr4fpw3kp-xJGXg/viewform" class="btn btn-ghost" target="_blank" rel="noopener">Volunteer form</a>
         </div>
       </div>
       <div class="contact-box">
@@ -509,7 +510,7 @@
 
 <script>
   /* Paste sign-up form links here (e.g. Google Forms). Leave blank to scroll to Contact. */
-  const LINKS = { family: "https://docs.google.com/forms/d/e/1FAIpQLSeASkDNd-Vc-bpjBtbB3NM-MHZisZfrLPqNKtzZSgxjiUbnmQ/viewform", volunteer: "https://www.greetfoundation.org/become-a-volunteer" };
+  const LINKS = { family: "https://docs.google.com/forms/d/e/1FAIpQLSeASkDNd-Vc-bpjBtbB3NM-MHZisZfrLPqNKtzZSgxjiUbnmQ/viewform", volunteer: "https://docs.google.com/forms/d/e/1FAIpQLSdhsGMmbdq2VcLvMuB6nxi9s3dSaIIHlgppr4fpw3kp-xJGXg/viewform" };
   document.querySelectorAll("[data-link]").forEach(a => {
     const url = LINKS[a.dataset.link];
     if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
